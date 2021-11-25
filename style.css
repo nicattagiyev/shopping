@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+padding: 13px;
+background-color: #52BE80;
+display: flex;
+align-items: center;
+justify-content: center; 
+width: 100%;
+margin: 0px auto;
+
+}
+nav .menu-icon{
+    display: flex;
+    align-items: center;
+    justify-content: right;  
+margin-right: 50px;
+}
+nav .btn-menu{
+    position: relative;
+    border: none !important;
+    outline: none !important;
+}
+nav .btn-menu .badge{
+    position: absolute;
+    border-radius: 50%;
+}
+nav .btn-menu i{
+    font-size: 28px;
+    background-color: #52BE80;
+
+}
+.shopping-card-list{
+    position: absolute;
+    width: 25rem;
+    top: 2.5rem;
+    right: 50px;
+    padding: 1rem;
+    background-color: #52BE80;
+    z-index: 1;
+display: none;
+}
+.active{
+    display: block;
+}
+.shopping-card-list img{
+    width: 30%;
+    
+}
+.shopping-card-list .shopping-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #52BE80;
+    margin-top: 1rem;
+}
+
+.shopping-card-list .shopping-card .card-del{
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.cards .card-one{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 19rem;
+    margin: 2rem auto;
+border: 1px solid ;
+padding-bottom: 1rem;
+}
+
+.cards .card-one .card-head img{
+    width: 100%;
+    object-fit: cover;
+    height: 45vh;
+    margin: 0 auto;
+    display: flex;
+}
+.cards .card-one .card-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cards .card-one .card-body{
+    position: relative;
+
+}
+.cards .card-one .card-body .card-price{
+    position: absolute;
+    right: 1rem;
+    background-color: #F7DC6F;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.cards .card-one .card-body .card-about{
+    margin-top: 1rem;
+ text-align: center;
+}
+.cards .card-one .card-end .add-btn{
+    border: none !important;
+    outline: none !important;
+    background-color:#F4D03F ;
+    padding: 5px 20px 5px 20px;
+}
+
+.cards .card-one .card-end .add-btn:hover{
+    background-color: #F7DC6F;
+}
+nav .btn-menu i:hover{
+   color: #212F3D;
+}
+@media only screen and (max-width: 1024px){
+    .cards .card-one .card-head img{
+
+        height: 38vh;
+    
+    }
+@media only screen and (max-width: 940px){
+.cards{
+    margin-top: 2rem;
+  flex-wrap: wrap;
+    }
+    .cards .card-one{
+margin: 2rem auto;
+    }
+    
+
+@media only screen and (max-width: 700px){
+        .cards{
+         flex-direction: column;
+        }
+        .cards{
+            margin-top: 4rem;
+        }
+        .cards .card-one{
+        margin: 1rem auto;
+    
+        }
+        .shopping-card-list{
+    
+            width: auto;
+            right: 0px;
+            left: 0px;
+           text-align: center;
+       
+           
+        }
+        .active{
+            display: block;
+        }
+        
+    }
+}  }
